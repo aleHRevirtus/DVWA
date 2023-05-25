@@ -20,7 +20,7 @@ jobs:
         method: "POST"
         customHeaders: '{"Content-Type": "application/json"}'
         bearerToken: ${{ secrets.SO_API_TOKEN }}
-        data: '{"externalData": { "parsedDomainId": "188800312", "parsedScanId": "188800401", "tool": "sonarqube", "testName": "Test SonarQube from GitHub Actions" }, "toolData": { "projectUrl": "https://github.com/aleHRevirtus/DVWA.git", "projectName": "DVWA", "address": "http://172.18.0.3:9001" }}'
+        data: '{"externalData": { "parsedDomainId": "188800312", "parsedScanId": "188800401", "tool": "sonarqube", "testName": "Test SonarQube from GitHub Actions" }, "toolData": { "projectUrl": "https://github.com/aleHRevirtus/DVWA.git", "projectName": "DVWA" }}'
     - name: Show Response
       run: |
         echo ${{ steps.strikeone_test_execution.outputs.response }}
